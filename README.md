@@ -3,19 +3,29 @@
 
 # Terminology
 
+## Vertex 
+A position in space
+
 ## Vector
 A direction in space
 
-## Vertex 
-A position in space
+What is the vector from (1,1) to (2,2)?
+
+
 
 ## Normalized Vector (Unit Vector)
 A vector is length 1.
 How? Divide all the components by the vector length.
 
+Given vector (1,1,1), what is the normalized vector?
+
+Given vector (3,0,-4), what is the normalized vector?
+
+
+
 # Ray
 An infinite line that has an orgin, but no end.
-r_o+r_d*T or r_x+r_dx*T+r_y+r_dy*T+r_z+r_dz*T
+$r_o+r_d*T$ or $r_x+r_dx*T+r_y+r_dy*T+r_z+r_dz*T$
 
 # Infinite Line
 Ax+By+Cz+D=0
