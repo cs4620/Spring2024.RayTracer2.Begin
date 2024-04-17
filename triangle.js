@@ -92,21 +92,21 @@ class Triangle{
     let collisionLocation = origin.add(direction.scale(timeToCollision));
 
     //Now check if this location is in the triangle
-    let oneCollision = collisionLocation.minus(this.one.position).normalize();
-    let twoCollision = collisionLocation.minus(this.two.position).normalize();
-    let threeCollision = collisionLocation.minus(this.three.position).normalize();
+    // let oneCollision = collisionLocation.minus(this.one.position).normalize();
+    // let twoCollision = collisionLocation.minus(this.two.position).normalize();
+    // let threeCollision = collisionLocation.minus(this.three.position).normalize();
 
-    let a = this.oneTwo.cross(oneCollision);
-    let b = this.twoThree.cross(twoCollision);
-    let c = this.threeOne.cross(threeCollision);
+    // let a = this.oneTwo.cross(oneCollision);
+    // let b = this.twoThree.cross(twoCollision);
+    // let c = this.threeOne.cross(threeCollision);
     
-    let i = a.dot(ABC);
-    let j = b.dot(ABC);
-    let k = c.dot(ABC);
+    // let i = a.dot(ABC);
+    // let j = b.dot(ABC);
+    // let k = c.dot(ABC);
 
-    if(i < 0) return;
-    if(j < 0) return;
-    if(k < 0) return;
+    // if(i < 0) return;
+    // if(j < 0) return;
+    // if(k < 0) return;
     
     //Return all the details about the collision
     return new Collision(timeToCollision, collisionLocation, ABC);
